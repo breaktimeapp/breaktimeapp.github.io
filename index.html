@@ -102,6 +102,17 @@
           .responsive-flex-section .textdiv img {
             max-width: 30vw !important;
           }
+          /* Features section mobile adjustments */
+          .features-section {
+            flex-direction: column !important;
+            gap: 2rem !important;
+          }
+          .features-section video {
+            max-width: 90vw !important;
+          }
+          .features-section .flex-grow-1 {
+            text-align: center !important;
+          }
         }
       }
 
@@ -198,14 +209,12 @@
         </div>
       </div>
 
-      <div
-        class="w-100 position-relative bg-white text-dark bg-cover d-flex align-items-center"
-      >
-        <div class="container px-vw-5 py-vh-5">
-          <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-12 col-lg-6 text-center">
+      <div class="bg-light">
+        <div class="container px-vw-5 py-vh-3">
+          <div class="d-flex align-items-center justify-content-center flex-column flex-lg-row gap-3 features-section">
+            <div class="flex-shrink-0 text-center" data-aos="fade-right">
               <video
-                class="img-fluid position-relative mx-auto"
+                class="img-fluid mx-auto"
                 style="max-width: 450px"
                 autoplay
                 loop
@@ -217,54 +226,21 @@
                 Your browser does not support the video tag.
               </video>
             </div>
-            <div class="col-12 col-lg-6">
-              <div
-                class="bg-light rounded-5 py-5 px-4 textdiv"
-                data-aos="fade-up"
-              >
-                <span class="h5 text-brand fw-lighter"
-                  >Stay focused with intentional breaks and <br> strict app blocking</span
-                >
-                <h1 class="display-1 fw-bold mb-4">
-                  Demo
-                </h2>
-                <img
-                  src="img/comingsoon.png"
-                  alt="Coming Soon"
-                  class="img-fluid mt-4"
-                  style="max-width: 250px"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="bg-light">
-        <div class="container px-vw-5 py-vh-5">
-          <div class="row d-flex align-items-center">
-            <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
-              <span class="h5 text-brand fw-lighter">What it is</span>
-              <h2 class="display-4">
-                A minimal yet powerful screen time management app that helps you
-                stay focused
-              </h2>
-            </div>
-            <div class="col-12 col-lg-5" data-aos="fade-left">
+            <div class="flex-grow-1 text-center text-lg-start" data-aos="fade-left">
               <h3 class="pt-5">Features</h3>
               <p class="text-secondary">
-                🚫 Complete blocking of distracting apps<br />
-                ⏱️ Choose intentional break time limits<br />
-                🤔 10-second reflection before breaks<br />
+                🚫 Block distracting apps permanently<br />
+                ⏱️ Unlock them with an intentional timed break<br />
+                🔒 Apps automatically restrict after break ends<br />
+                🤔 Reflection timer window before break can be started<br />
                 🎯 Minimal UI to minimise distractions<br />
                 ⚡ Quick 30-second setup<br />
-                🔒 Optional strict mode with no breaks<br />
               </p>
               <h3 class="border-top border-secondary pt-5 mt-5">
-                Development & Engineering
+                How is Breaktime different to other focus apps?
               </h3>
               <p class="text-secondary">
-                - Built natively with Swift for iOS.<br />
+                - Don't start a timed session to focus, start a timed session for breaks.<br />
                 - Leverages Apple's Screen Time API for robust app blocking.<br />
                 - Clean architecture with MVVM pattern.<br />
                 - Local-first design for privacy and performance.<br />
