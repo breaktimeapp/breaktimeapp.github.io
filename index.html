@@ -84,17 +84,24 @@
         .nav-link {
           font-size: 0.9rem !important;
         }
-        /* First section mobile adjustments */
-        .first-section-mobile {
-          flex-direction: column !important;
-          text-align: center !important;
-        }
-        .first-section-mobile .textdiv {
-          margin-top: 2rem;
-          padding: 2rem 1rem !important;
-        }
-        .first-section-mobile img {
-          max-width: 90vw !important;
+        /* Responsive flexbox section mobile adjustments */
+        @media (max-width: 991px) {
+          .responsive-flex-section {
+            flex-direction: column !important;
+            text-align: center !important;
+            gap: 2rem !important;
+          }
+          .responsive-flex-section img {
+            max-width: 90vw !important;
+            order: 1 !important;
+          }
+          .responsive-flex-section .textdiv {
+            order: 0 !important;
+            padding: 2rem 1rem !important;
+          }
+          .responsive-flex-section .textdiv img {
+            max-width: 30vw !important;
+          }
         }
       }
 
@@ -128,7 +135,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
     <div class="container-fluid d-flex align-items-center justify-content-between">
       <a class="navbar-brand" href="#" style="font-family: 'Inter', sans-serif">
-        <span class="fw-bold text-dark" style="font-size: 2rem">Breaktime</span>
+        <img src="img/breaktimelogo.png" alt="Breaktime" style="height: 2rem">
       </a>
       <div class="navbar-nav d-flex flex-row align-items-center">
         <a class="nav-link text-dark me-3">Suggest a feature</a>
@@ -140,31 +147,31 @@
             <div
         class="w-100 position-relative bg-white text-dark bg-cover d-flex align-items-center"
       >
-        <div class="container-fluid px-4 py-vh-5">
-          <div class="d-flex align-items-center justify-content-center flex-column flex-lg-row first-section-mobile">
-            <div class="flex-shrink-0 me-lg-5 mb-4 mb-lg-0">
+        <div class="container pl-vw3 pr-vw5 py-vh-5">
+          <div class="d-flex align-items-center justify-content-center flex-column flex-lg-row gap-3 responsive-flex-section">
+            <div class="flex-shrink-0 order-1 order-lg-0">
               <img
                 src="img/multimockupbanner.png"
                 alt="Breaktime App Mockup"
                 class="img-fluid"
-                style="max-width: 1050px"
+                style="max-width: 55vw"
                 data-aos="fade-up"
               />
             </div>
-            <div class="flex-shrink-0">
+            <div class="flex-grow-1 order-0 order-lg-1 text-center text-lg-start">
               <div
                 class="bg-light rounded-5 py-5 px-4 textdiv"
                 data-aos="fade-up"
               >
                 <span class="h3 text-brand fw-lighter"
-                  >A focus app that actually works.</span
+                  >A focus app <br> that actually works.</span
                 >
                 <h1 class="display-1 fw-bold">Breaktime</h1>
                 <img
-                  src="img/comingsoon.png"v
+                  src="img/comingsoon.png"
                   alt="Coming Soon"
                   class="img-fluid mt-4"
-                  style="max-width: 250px"
+                  style="max-width: 10vw"
                 />
               </div>
             </div>
@@ -173,14 +180,14 @@
       </div>
 
       <div
-        class="w-100 overflow-hidden position-relative bg-white text-dark"
+        class="w-100 overflow-hidden position-relative bg-white text-dark pt-5"
         data-aos="fade"
       >
         <div class="container px-vw-5 py-vh-5">
           <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-12 col-lg-6 text-center">
-              <h1 class="display-1 fw-bold">Join the Waitlist</h1>
-              <p class="lead mt-3">join the waitlist</p>
+            <div class="col-12 col-lg-6 text-center text-lg-end">
+              <h1 class="display-2 fw-bold">Join the Waitlist</h1>
+              <p class="lead mt-3">Get notified when Breaktime releases to the App Store or sign up to be a beta tester</p>
             </div>
             <div class="col-12 col-lg-6">
               <iframe data-tally-src="https://tally.so/embed/mDOaRN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="450" frameborder="0" marginheight="0" marginwidth="0" title="Join the waitlist"></iframe>
@@ -216,10 +223,10 @@
                 data-aos="fade-up"
               >
                 <span class="h5 text-brand fw-lighter"
-                  >A Focus App That Actually Works</span
+                  >Stay focused with intentional breaks and <br> strict app blocking</span
                 >
-                <h2 class="display-4 mb-4">
-                  Stay focused with intentional breaks and strict app blocking
+                <h1 class="display-1 fw-bold mb-4">
+                  Demo
                 </h2>
                 <img
                   src="img/comingsoon.png"

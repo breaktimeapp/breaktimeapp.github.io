@@ -471,6 +471,10 @@ img, svg {
   font-weight: 550 !important;
 }
 
+.fw-semibold {
+  font-weight: 350 !important;
+}
+
 .text-center {
   text-align: center !important;
 }
