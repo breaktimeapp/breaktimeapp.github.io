@@ -102,6 +102,21 @@
       .navbar-nav.d-flex.flex-row {
         flex-direction: row !important;
       }
+
+      /* Fix navbar vertical alignment */
+      .navbar-brand {
+        display: flex !important;
+        align-items: center !important;
+      }
+
+      .navbar-nav.d-flex.flex-row {
+        align-items: center !important;
+      }
+
+      .nav-link {
+        padding-top: 0.275rem !important;
+        padding-bottom: 0.275rem !important;
+      }
     </style>
   </head>
 
@@ -141,10 +156,10 @@
                 class="bg-light rounded-5 py-5 px-4 textdiv"
                 data-aos="fade-up"
               >
-                <span class="h5 text-brand fw-lighter"
-                  >intentional breaks and strict app blocking</span
+                <span class="h3 text-brand fw-lighter"
+                  >A focus app that actually works.</span
                 >
-                <h1 class="display-1 fw-bold">A focus app that actually works.</h1>
+                <h1 class="display-1 fw-bold">Breaktime</h1>
                 <img
                   src="img/comingsoon.png"v
                   alt="Coming Soon"
