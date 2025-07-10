@@ -78,9 +78,23 @@
         .textdiv2 {
           padding-bottom: 5px !important;
         }
-        .navbar-brand span,
-        .navbar a span {
-          font-size: 1em !important;
+        .navbar-brand span {
+          font-size: 1.2rem !important;
+        }
+        .nav-link {
+          font-size: 0.9rem !important;
+        }
+        /* First section mobile adjustments */
+        .first-section-mobile {
+          flex-direction: column !important;
+          text-align: center !important;
+        }
+        .first-section-mobile .textdiv {
+          margin-top: 2rem;
+          padding: 2rem 1rem !important;
+        }
+        .first-section-mobile img {
+          max-width: 90vw !important;
         }
       }
 
@@ -128,13 +142,13 @@
         class="w-100 position-relative bg-white text-dark bg-cover d-flex align-items-center"
       >
         <div class="container-fluid px-4 py-vh-5">
-          <div class="d-flex align-items-center justify-content-center flex-column flex-lg-row">
+          <div class="d-flex align-items-center justify-content-center flex-column flex-lg-row first-section-mobile">
             <div class="flex-shrink-0 me-lg-5 mb-4 mb-lg-0">
               <img
                 src="img/multimockupbanner.png"
                 alt="Breaktime App Mockup"
                 class="img-fluid"
-                style="max-width: 1200px"
+                style="max-width: 1050px"
                 data-aos="fade-up"
               />
             </div>
