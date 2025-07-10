@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png" />
+    <meta name="author" content="Holger Koenemann" />
+    <meta name="generator" content="Eleventy v2.0.1" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>Report a bug - Breaktime</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="icon" href="favicon-32x32.png" type="image/png" />
+
+    <style>
+      /* Inter font faces */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: local(""), url("fonts/inter-v12-latin-300.woff2") format("woff2"),
+          url("fonts/inter-v12-latin-300.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local(""),
+          url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
+          url("fonts/inter-v12-latin-regular.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local(""), url("fonts/inter-v12-latin-500.woff2") format("woff2"),
+          url("fonts/inter-v12-latin-500.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local(""), url("fonts/inter-v12-latin-700.woff2") format("woff2"),
+          url("fonts/inter-v12-latin-700.woff") format("woff");
+      }
+
+      /* Mobile responsive adjustments */
+      @media (max-width: 768px) {
+        .navbar-brand span {
+          font-size: 1.2rem !important;
+        }
+        .nav-link {
+          font-size: 0.9rem !important;
+        }
+      }
+
+      /* Navbar navigation horizontal alignment */
+      .navbar-nav.d-flex.flex-row {
+        flex-direction: row !important;
+      }
+
+      /* Fix navbar vertical alignment */
+      .navbar-brand {
+        display: flex !important;
+        align-items: center !important;
+      }
+
+      .navbar-nav.d-flex.flex-row {
+        align-items: center !important;
+      }
+
+      .nav-link {
+        padding-top: 0.275rem !important;
+        padding-bottom: 0.275rem !important;
+      }
+
+      /* Full height form container */
+      .form-container {
+        height: calc(100vh - 80px);
+        min-height: 500px;
+      }
+
+      .form-container iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-white text-dark mt-0"
+    data-bs-spy="scroll"
+    data-bs-target="#navScroll"
+  >
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <a
+          class="navbar-brand"
+          href="index.html"
+          style="font-family: 'Inter', sans-serif"
+        >
+          <img
+            src="img/breaktimelogo.png"
+            alt="Breaktime"
+            style="height: 2rem"
+          />
+        </a>
+        <div class="navbar-nav d-flex flex-row align-items-center">
+          <a class="nav-link text-dark me-3" href="index.html">Home</a>
+          <a class="nav-link text-dark me-3" href="suggest-feature.html"
+            >Suggest a feature</a
+          >
+          <a class="nav-link text-dark" href="report-bug.html">Report a bug</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container-fluid p-0">
+        <div class="form-container">
+          <iframe
+            data-tally-src="https://tally.so/r/w2YgEM?transparentBackground=1"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Report a bug"
+          >
+          </iframe>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+  </body>
+</html>
