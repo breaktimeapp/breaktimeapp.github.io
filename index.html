@@ -27,7 +27,7 @@
     <meta name="author" content="Holger Koenemann" />
     <meta name="generator" content="Eleventy v2.0.1" />
     <meta name="HandheldFriendly" content="true" />
-    <title>Breaktime Demo</title>
+    <title>Breaktime</title>
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="icon" href="favicon-32x32.png" type="image/png">
 
@@ -83,6 +83,9 @@
         }
         .nav-link {
           font-size: 0.9rem !important;
+        }
+        .breaktime-title {
+          font-size: 4.5rem !important;
         }
         /* Responsive flexbox section mobile adjustments */
         @media (max-width: 991px) {
@@ -146,7 +149,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
     <div class="container-fluid d-flex align-items-center justify-content-between">
       <a class="navbar-brand" href="#" style="font-family: 'Inter', sans-serif">
-        <img src="img/breaktimelogo.png" alt="Breaktime" style="height: 2rem">
+        <img src="img/breaktimelogo.png" alt="Breaktime" style="height: 2.3rem">
       </a>
         <div class="navbar-nav d-flex flex-row align-items-center">
           <a class="nav-link text-dark me-3" href="index.html">Home</a>
@@ -180,7 +183,7 @@
                 <span class="h3 text-brand fw-lighter"
                   >A focus app <br> that actually works.</span
                 >
-                <h1 class="display-1 fw-bold">Breaktime</h1>
+                <h1 class="fw-bold breaktime-title" style="font-size: 6rem;">Breaktime</h1>
                 <img
                   src="img/comingsoon.png"
                   alt="Coming Soon"
@@ -214,7 +217,7 @@
 
       <div class="bg-light">
         <div class="container px-vw-5 py-vh-3">
-          <div class="d-flex align-items-center justify-content-center flex-column flex-lg-row gap-3 features-section">
+          <div class="d-flex align-items-center justify-content-center flex-column flex-lg-row features-section" style="gap: 4rem;">
             <div class="flex-shrink-0 text-center" data-aos="fade-right">
               <video
                 class="img-fluid mx-auto"
@@ -231,7 +234,7 @@
             </div>
             <div class="flex-grow-1 text-center text-lg-start" data-aos="fade-left">
               <h3 class="pt-5">Features</h3>
-              <p class="text-secondary">
+              <p class="lead mt-3" style="font-size: 1.5rem;">
                 🚫 Block distracting apps permanently<br />
                 ⏱️ Unlock them with an intentional timed break<br />
                 🔒 Apps automatically restrict after break ends<br />
@@ -239,15 +242,16 @@
                 🎯 Minimal UI to minimise distractions<br />
                 ⚡ Quick 30-second setup<br />
               </p>
-              <h3 class="pt-5 mt-2">
+              <h3 class="pt-4.8 mt-5">
                 How is Breaktime different to other focus apps?
               </h3>
-              <ul class="text-secondary list-unstyled">
-                <li>You shouldn't be starting a timed session for a focus period. You should be starting a timed session for a break.</li>
-                <li>Default ScreenTime statistics are flawed. Not all ScreenTime is unproductive. Here we track accurate distraction time</li>
-                <li>No BS user interface, we keep it simple to help you stay focused</li>
-                <li>Permanent app blocking with timed unlock periods to hold you accountable</li>
-              </ul>
+              <p class="lead mt-3" style="font-size: 1.45rem;">
+                We believe that starting a focus period manually each time isn't the right approach. Why not block apps permanently and start a break period to unlock it?<br />
+                <br />
+                Default ScreenTime statistics are flawed. Not all ScreenTime is unproductive. Breaktime tracks your distraction time accurately.<br />
+                <br />
+                Overcomplicated user interfaces with excessive features are distracting (defeating the purpose), we keep it simple to help you stay focused.<br />
+              </p>
             </div>
           </div>
         </div>
@@ -261,7 +265,7 @@
               data-aos="fade-right"
             >
               <span class="h5 text-brand fw-lighter"
-                >From reflection to break timers</span
+                >Customize focus to your needs</span
               >
               <h2 class="display-4">
                 Choose exactly what works for you and helps keep you focused.
@@ -329,8 +333,9 @@
       </div> -->
     </main>
     <footer class="bg-white border-top border-secondary">
-      <div class="container text-center small py-vh-2">
-        Breaktime
+      <div class="container d-flex justify-content-between align-items-center small py-vh-2" style="gap: 2rem;">
+        <div>Breaktime 2025</div>
+        <div><a href="contact.html" class="text-dark text-decoration-none">Contact</a></div>
       </div>
     </footer>
 
