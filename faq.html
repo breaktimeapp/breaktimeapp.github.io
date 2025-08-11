@@ -27,9 +27,9 @@
     <meta name="author" content="Holger Koenemann" />
     <meta name="generator" content="Eleventy v2.0.1" />
     <meta name="HandheldFriendly" content="true" />
-    <title>Contact - Breaktime</title>
+    <title>FAQ - Breaktime</title>
     <link rel="stylesheet" href="css/theme.css" />
-    <link rel="icon" href="favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
 
     <style>
       /* Inter font faces */
@@ -46,8 +46,7 @@
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: local(""),
-          url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
+        src: local(""), url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
           url("fonts/inter-v12-latin-regular.woff") format("woff");
       }
       @font-face {
@@ -69,6 +68,10 @@
 
       /* Mobile responsive adjustments */
       @media (max-width: 768px) {
+        .py-vh-5 {
+          padding-top: 1vh;
+          padding-bottom: 1vh;
+        }
         .navbar-brand span {
           font-size: 1.2rem !important;
         }
@@ -96,18 +99,6 @@
         padding-top: 0.275rem !important;
         padding-bottom: 0.275rem !important;
       }
-
-      /* Full height form container */
-      .form-container {
-        height: calc(100vh - 80px);
-        min-height: 500px;
-      }
-
-      .form-container iframe {
-        border: 0;
-        width: 100%;
-        height: 100%;
-      }
     </style>
   </head>
 
@@ -116,21 +107,11 @@
     data-bs-spy="scroll"
     data-bs-target="#navScroll"
   >
-    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
-      <div
-        class="container-fluid d-flex align-items-center justify-content-between"
-      >
-        <a
-          class="navbar-brand"
-          href="index.html"
-          style="font-family: 'Inter', sans-serif"
-        >
-          <img
-            src="img/breaktimelogo.png"
-            alt="Breaktime"
-            style="height: 2.3rem"
-          />
-        </a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="#" style="font-family: 'Inter', sans-serif">
+        <img src="img/breaktimelogo.png" alt="Breaktime" style="height: 2.3rem">
+      </a>
         <div class="navbar-nav d-flex flex-row align-items-center">
           <a class="nav-link text-dark me-3" href="index.html">Home</a>
           <a class="nav-link text-dark me-3" href="suggest-feature.html"
@@ -138,29 +119,30 @@
           >
           <a class="nav-link text-dark" href="report-bug.html">Report a bug</a>
         </div>
-      </div>
-    </nav>
-
+    </div>
+  </nav>
     <main>
-      <div class="container-fluid p-0">
-        <div class="form-container">
-          <iframe
-            data-tally-src="https://tally.so/embed/3EOO7o?transparentBackground=1"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="Contact form"
-          >
-          </iframe>
+      <div class="container py-vh-5 text-center">
+        <h1 class="display-1 fw-bold mb-4">FAQ</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <img
+              src="img/comingsoon.png"
+              alt="Coming Soon"
+              class="img-fluid my-5"
+              style="max-width: 300px"
+            />
+            <h2 class="display-4 text-muted mb-4">Coming Soon</h2>
+            <p class="lead text-muted">
+              We're working on gathering the most frequently asked questions to help you get the most out of Breaktime. Check back soon!
+            </p>
+          </div>
         </div>
       </div>
     </main>
-
     <footer class="bg-white border-top border-secondary">
       <div class="container d-flex justify-content-between align-items-center small py-vh-2" style="gap: 2rem;">
-        <div>Breaktime 2025</div>
+        <div>Made by Nathan Chan</div>
         <div>
           <a href="contact.html" class="text-dark text-decoration-none me-3">Contact</a>
           <a href="faq.html" class="text-dark text-decoration-none me-3">FAQ</a>
@@ -170,6 +152,11 @@
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
   </body>
 </html>
