@@ -29,7 +29,7 @@
     <meta name="HandheldFriendly" content="true" />
     <title>FAQ - Breaktime</title>
     <link rel="stylesheet" href="css/theme.css" />
-    <link rel="icon" href="favicon-32x32.png" type="image/png">
+    <link rel="icon" href="favicon-32x32.png" type="image/png" />
 
     <style>
       /* Inter font faces */
@@ -46,7 +46,8 @@
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: local(""), url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
+        src: local(""),
+          url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
           url("fonts/inter-v12-latin-regular.woff") format("woff");
       }
       @font-face {
@@ -107,11 +108,21 @@
     data-bs-spy="scroll"
     data-bs-target="#navScroll"
   >
-  <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-      <a class="navbar-brand" href="#" style="font-family: 'Inter', sans-serif">
-        <img src="img/breaktimelogo.png" alt="Breaktime" style="height: 2.3rem">
-      </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <a
+          class="navbar-brand"
+          href="#"
+          style="font-family: 'Inter', sans-serif"
+        >
+          <img
+            src="img/breaktimelogo.png"
+            alt="Breaktime"
+            style="height: 2.3rem"
+          />
+        </a>
         <div class="navbar-nav d-flex flex-row align-items-center">
           <a class="nav-link text-dark me-3" href="index.html">Home</a>
           <a class="nav-link text-dark me-3" href="suggest-feature.html"
@@ -119,34 +130,104 @@
           >
           <a class="nav-link text-dark" href="report-bug.html">Report a bug</a>
         </div>
-    </div>
-  </nav>
+      </div>
+    </nav>
     <main>
-      <div class="container py-vh-5 text-center">
-        <h1 class="display-1 fw-bold mb-4">FAQ</h1>
+      <div class="container py-vh-5">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <img
-              src="img/comingsoon.png"
-              alt="Coming Soon"
-              class="img-fluid my-5"
-              style="max-width: 300px"
-            />
-            <h2 class="display-4 text-muted mb-4">Coming Soon</h2>
-            <p class="lead text-muted">
-              We're working on gathering the most frequently asked questions to help you get the most out of Breaktime. Check back soon!
-            </p>
+            <h1 class="display-1 fw-bold mb-5 text-center">FAQ</h1>
+
+            <div class="bg-light rounded-5 py-4 px-4 mb-4">
+              <h3 class="fw-bold mb-3">
+                Q1: My apps are supposed to be blocked, but they aren't
+              </h3>
+              <p class="mb-3">
+                Sometimes iOS blocking can get stuck and is a known issue from
+                Apple, which may cause blocking to stop working for certain apps
+                or websites.
+              </p>
+              <p class="mb-3">
+                <strong>Follow these steps to fix the issue:</strong>
+              </p>
+
+              <div class="mb-4">
+                <h5 class="fw-bold mb-2">Step 1: Resync Breaktime</h5>
+                <ul class="list-unstyled ms-3">
+                  <li class="mb-1">• Open the Breaktime app.</li>
+                  <li class="mb-1">• Go to your Profile tab.</li>
+                  <li class="mb-1">
+                    • Tap the Settings icon (gear in the top right corner).
+                  </li>
+                  <li class="mb-1">• Scroll down and tap Resync.</li>
+                </ul>
+                <p class="text-muted small">
+                  If blocking still isn't working, move on to the next step.
+                </p>
+              </div>
+
+              <div class="mb-4">
+                <h5 class="fw-bold mb-2">Step 2: Close and reopen Breaktime</h5>
+                <p class="ms-3 mb-1">
+                  Force close the Breaktime app and then open it again to
+                  refresh the connection.
+                </p>
+                <p class="text-muted small">
+                  If this doesn't work, continue to Step 3.
+                </p>
+              </div>
+
+              <div class="mb-4">
+                <h5 class="fw-bold mb-2">Step 3: Restart your device</h5>
+                <p class="ms-3 mb-1">
+                  Turn your device off, wait a few seconds, and turn it back on.
+                </p>
+                <p class="text-muted small">
+                  If blocking is still not working, try Step 4.
+                </p>
+              </div>
+
+              <div class="mb-2">
+                <h5 class="fw-bold mb-2">Step 4: Reinstall Breaktime</h5>
+                <p class="ms-3 mb-1">
+                  Delete the Breaktime app and reinstall it from the App Store.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer class="bg-white border-top border-secondary">
-      <div class="container d-flex justify-content-between align-items-center small py-vh-2" style="gap: 2rem;">
-        <div>Made by Nathan Chan</div>
-        <div>
-          <a href="contact.html" class="text-dark text-decoration-none me-3">Contact</a>
-          <a href="faq.html" class="text-dark text-decoration-none me-3">FAQ</a>
-          <a href="privacy-policy.html" class="text-dark text-decoration-none">Privacy Policy</a>
+      <div
+        class="container d-flex justify-content-between align-items-center small py-vh-2"
+        style="gap: 2rem"
+      >
+        <div>Breaktime 2025</div>
+        <div class="d-flex align-items-center" style="gap: 1rem">
+          <div>
+            <a href="contact.html" class="text-dark text-decoration-none me-3"
+              >Contact</a
+            >
+            <a href="faq.html" class="text-dark text-decoration-none me-3"
+              >FAQ</a
+            >
+            <a
+              href="privacy-policy.html"
+              class="text-dark text-decoration-none me-3"
+              >Privacy Policy</a
+            >
+          </div>
+          <a
+            href="https://apps.apple.com/au/app/breaktime-focus-app-blocker/id6746742596"
+            target="_blank"
+          >
+            <img
+              src="img/downloadlogo.png"
+              alt="Download Breaktime"
+              style="height: 2rem"
+            />
+          </a>
         </div>
       </div>
     </footer>
