@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Access Link</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Poppins", sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         margin: 0;
         text-align: center;
-        background: #f0f0f0;
+        background: white;
       }
       .container {
         background: #fff;
@@ -23,11 +25,13 @@
         max-width: 400px;
       }
       h1 {
+        font-family: "Poppins", sans-serif;
         font-size: 1.5rem;
+        font-weight: 500;
         margin-bottom: 15px;
       }
       p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 25px;
       }
       ol {
@@ -51,11 +55,12 @@
   </head>
   <body>
     <div class="container" id="tiktokInstructions" style="display: none">
-      <h1>To access the link:</h1>
-      <p>Follow these two simple steps:</p>
+      <h1>Hi! To access the link, follow these two simple steps.</h1>
       <ol>
         <li>Tap the <strong>⋮</strong> in the top right corner of TikTok.</li>
-        <li>Then tap <strong>Open in Browser</strong>.</li>
+        <li>
+          Then tap <strong style="color: #1abc9c">Open in Browser</strong>.
+        </li>
       </ol>
     </div>
 
@@ -68,8 +73,8 @@
 
       // Show instructionsa
       document.getElementById("tiktokInstructions").style.display = "block";
-      // // Not TikTok → automatically redirect
-      // window.location.href = appStoreLink;
+      // Not TikTok → automatically redirect
+      window.location.href = appStoreLink;
     </script>
   </body>
 </html>
