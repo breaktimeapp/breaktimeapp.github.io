@@ -71,10 +71,13 @@
       // Detect if inside TikTok in-app browser
       const isTikTok = /TikTok/.test(navigator.userAgent);
 
-      // Show instructionsa
-      document.getElementById("tiktokInstructions").style.display = "block";
-      // Not TikTok → automatically redirect
-      window.location.href = appStoreLink;
+      if (isTikTok) {
+        // Show instructionsa
+        document.getElementById("tiktokInstructions").style.display = "block";
+      } else {
+        // Not TikTok → automatically redirect
+        window.location.href = appStoreLink;
+      }
     </script>
   </body>
 </html>
