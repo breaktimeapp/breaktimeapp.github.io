@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Access Link</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        background: #f0f0f0;
+      }
+      .container {
+        background: #fff;
+        padding: 30px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+      }
+      ol {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+      button {
+        background: #25f;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      button:hover {
+        background: #0077cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="tiktokInstructions" style="display: none">
+      <h1>To access the link:</h1>
+      <p>Follow these two simple steps:</p>
+      <ol>
+        <li>Tap the <strong>⋮</strong> in the top right corner of TikTok.</li>
+        <li>Then tap <strong>Open in Browser</strong>.</li>
+      </ol>
+    </div>
+
+    <script>
+      const appStoreLink =
+        "https://apps.apple.com/au/app/breaktime-focus-app-blocker/id6746742596";
+
+      // Detect if inside TikTok in-app browser
+      const isTikTok = /TikTok/.test(navigator.userAgent);
+
+      if (isTikTok) {
+        // Show instructions
+        document.getElementById("tiktokInstructions").style.display = "block";
+      } else {
+        // Not TikTok → automatically redirect
+        window.location.href = appStoreLink;
+      }
+    </script>
+  </body>
+</html>
