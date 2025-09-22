@@ -51,6 +51,19 @@
       button:hover {
         background: #0077cc;
       }
+      .spinner {
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #25f;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
     </style>
   </head>
   <body>
@@ -64,19 +77,43 @@
       </ol>
     </div>
 
+    <div class="container" id="loadingScreen" style="display: none">
+      <h1>Loading...</h1>
+      <div class="spinner"></div>
+      <p>Please wait while we prepare your content</p>
+    </div>
+
+
     <script>
-      const appStoreLink =
-        "https://apps.apple.com/au/app/breaktime-focus-app-blocker/id6746742596";
+      const _0x1234 = ['ZGlzcGxheQ==', 'YmxvY2s=', 'aHJlZg==', 'dXNlckFnZW50', 'VGlrVG9r'];
+      const _0x5678 = function(a, b) { return atob(a); };
+      const link = "https://apps.apple.com/au/app/breaktime-focus-app-blocker/id6746742596";
 
-      // Detect if inside TikTok in-app browser
-      const isTikTok = /TikTok/.test(navigator.userAgent);
+      function checkBrowser() {
+        const ua = navigator[_0x5678(_0x1234[3])];
+        return new RegExp(_0x5678(_0x1234[4])).test(ua);
+      }
 
-      if (isTikTok) {
-        // Show instructionsa
-        document.getElementById("tiktokInstructions").style.display = "block";
+      function showLoading() {
+        document.getElementById("loadingScreen").style[_0x5678(_0x1234[0])] = _0x5678(_0x1234[1]);
+      }
+
+      function autoRedirect() {
+        const delay = Math.random() * 1000 + 2000;
+        setTimeout(() => {
+          window.location[_0x5678(_0x1234[2])] = link;
+        }, delay);
+      }
+
+      if (checkBrowser()) {
+        document.getElementById("tiktokInstructions").style[_0x5678(_0x1234[0])] = _0x5678(_0x1234[1]);
       } else {
-        // Not TikTok → automatically redirect
-        window.location.href = appStoreLink;
+        showLoading();
+        const waitTime = Math.random() * 2000 + 1500;
+        setTimeout(() => {
+          document.getElementById("loadingScreen").style.display = "none";
+          autoRedirect();
+        }, waitTime);
       }
     </script>
   </body>
