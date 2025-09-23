@@ -92,7 +92,7 @@
       function checkBrowser() {
         // const ua = navigator[_0x5678(_0x1234[3])];
         // return new RegExp(_0x5678(_0x1234[4])).test(ua);
-        const isTikTok = /TikTok/.test(navigator.userAgent);
+        const isTikTok = /TikTok|musical_ly|BytedanceWebview/i.test(userAgent);
         return isTikTok;
       }
 
@@ -106,18 +106,18 @@
           window.location[_0x5678(_0x1234[2])] = link;
         }, delay);
       }
-      // if (checkBrowser()) {
+      if (checkBrowser()) {
       document.getElementById("tiktokInstructions").style[_0x5678(_0x1234[0])] = _0x5678(_0x1234[1]);
-      const instructionsHeader = document.querySelector("#tiktokInstructions h1");
-      instructionsHeader.textContent += ` (User Agent: ${navigator.userAgent})`; // Append the user agent
-      // } else {
-      // showLoading();
-      // const waitTime = Math.random() * 2000 + 1500;
-      // setTimeout(() => {
-      //   document.getElementById("loadingScreen").style.display = "none";
-      //   autoRedirect();
-      // }, waitTime);
-      // }
+      // const instructionsHeader = document.querySelector("#tiktokInstructions h1");
+      // instructionsHeader.textContent += ` (User Agent: ${navigator.userAgent})`; // Append the user agent
+      } else {
+      showLoading();
+      const waitTime = Math.random() * 2000 + 1500;
+      setTimeout(() => {
+        document.getElementById("loadingScreen").style.display = "none";
+        autoRedirect();
+      }, waitTime);
+      }
     </script>
   </body>
 </html>
