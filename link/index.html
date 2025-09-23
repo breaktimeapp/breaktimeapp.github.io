@@ -90,8 +90,7 @@
       const link = "https://apps.apple.com/au/app/breaktime-focus-app-blocker/id6746742596";
 
       function checkBrowser() {
-        // const ua = navigator[_0x5678(_0x1234[3])];
-        // return new RegExp(_0x5678(_0x1234[4])).test(ua);
+        const userAgent = navigator.userAgent; // Correctly reference navigator.userAgent
         const isTikTok = /TikTok|musical_ly|BytedanceWebview/i.test(userAgent);
         return isTikTok;
       }
