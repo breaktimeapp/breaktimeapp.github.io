@@ -138,7 +138,7 @@
           <div class="col-lg-8">
             <h1 class="display-1 fw-bold mb-5 text-center">FAQ</h1>
 
-            <div class="bg-light rounded-5 py-4 px-4 mb-4">
+            <div class="bg-light rounded-5 py-4 px-4 mb-8">
               <h3 class="fw-bold mb-3">
                 Q1: My apps are supposed to be blocked, but they aren't
               </h3>
@@ -195,26 +195,46 @@
               </div>
             </div>
 
-            <div class="bg-light rounded-5 py-4 px-4 mb-4">
+            <div class="bg-light rounded-5 py-4 px-4 mb-8">
               <h3 class="fw-bold mb-3">
                 Q2: My stats aren't loading and/or refresh button not working
               </h3>
               <p class="mb-3">
-                This is a known iOS issue that can occur with the stats display.
+                This is a known iOS issue on Apple's side that can occur with the stats display.
               </p>
               <p class="mb-3">
                 <strong>To fix this issue:</strong>
               </p>
               <ul class="list-unstyled ms-3">
+                <li class="mb-1">Make sure you do not have other Screen Time apps as this can conflict</li>
                 <li class="mb-1">Swipe up from the bottom of your screen</li>
                 <li class="mb-1">Swipe away the Breaktime app to force quit it</li>
                 <li class="mb-1">Reopen the app</li>
               </ul>
             </div>
 
-            <div class="bg-light rounded-5 py-4 px-4 mb-4">
+            <div class="bg-light rounded-5 py-4 px-4 mb-8">
               <h3 class="fw-bold mb-3">
-                Q3: How can I still get notifications from apps that are blocked?
+                Q3: My stats aren't accurate / data is missing.
+              </h3>
+              <p class="mb-3">
+                Breaktime uses Apple's built-in Screen Time technology to retrieve and display data. However it may not always be reliable. Apple may limit available data Breaktime can display depending on your iOS version and typically only shows data after you installed Breaktime.
+              </p>
+              <p class="mb-3">
+                <strong>To check</strong>
+              </p>
+              <ul class="list-unstyled ms-3">
+                <li class="mb-1">Open the Settings app and navigate to "Screen Time".</li>
+                <li class="mb-1">Compare the data displayed there with the stats shown in Breaktime. If it does not match please report this to us.</li>
+                <li class="mb-1">In some cases using your phone with picture-in-picture mode can cause both apps to be counted towards phone usage.</li>
+                <li class="mb-1">Sometimes apps with background activity can contribute to Screen Time.</li>
+                <li class="mb-1">Make sure you do not have other Screen Time apps as this can cause issues.</li>
+              </ul>
+            </div>
+
+            <div class="bg-light rounded-5 py-4 px-4 mb-8">
+              <h3 class="fw-bold mb-3">
+                Q4: How can I still get notifications from apps that are blocked?
               </h3>
               <p class="mb-3">
                 Unfortunately, iOS does not allow notifications from apps that are blocked. This is a limitation of the iOS operating system, and there is no way to bypass it directly.
